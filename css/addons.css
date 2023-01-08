@@ -1,0 +1,95 @@
+/* banner */
+.banner {
+	bottom:10%;
+	opacity:.7;
+	width:50%;
+	text-align:right;
+	padding-right:24px;
+	/* display:none; */
+}
+
+/* contact */
+#contact {
+	float:right;
+}
+#contact ul li { 
+  list-style:none; 
+  position:relative;
+  padding:12px 0 0 32px;
+}
+#contact ul li:before {
+  content:"";
+  width:24px;
+  height:24px;
+  position:absolute;
+  left:0;
+  top:10px;
+}
+#contact ul li#contact_address:before {
+  background: transparent url("../img/map-marker-alt-solid.svg") scroll 0 0 no-repeat;
+}
+#contact ul li#contact_gewerbe:before {
+  background: transparent url("../img/address-card-solid.svg") scroll 0 0 no-repeat;
+}
+#contact ul li#contact_hours:before {
+  background: transparent url("../img/clock-solid.svg") scroll 0 0 no-repeat;
+}
+#contact ul li#contact_phone:before {
+  background: transparent url("../img/phone-square-alt-solid.svg") scroll 0 0 no-repeat;
+}
+#contact ul li#contact_email:before {
+  background: transparent url("../img/envelope-solid.svg") scroll 0 0 no-repeat;
+}
+
+/* map */
+#imgContainer {
+	overflow:hidden;
+	border:solid 1px #2671AF;
+    }
+#map {
+	position:relative;
+	float:left;
+	left:0;
+	cursor:hand;
+    }
+
+/* footer */
+#footer {
+	margin:20px 0 30px 0;
+}
+#footer ul {
+    list-style:none;
+    padding:0;
+	text-align:center;
+}
+#footer ul > li {
+    display:inline;
+}
+#footer ul > li:not(:last-child)::after {
+    content:" ·";
+}
+
+/* overrides */
+h4 {
+	color:#1D047A !important;
+}
+
+.w3-topbar {
+	border-top-width:2px !important;
+}
+
+@media (max-width:768px){
+	#contact {
+		float:none !important;
+		padding-bottom:10px !important;
+		margin-bottom:10px !important;
+	}
+	.w3-expand-small {
+		width:100% !important;
+	}
+	.banner {
+		/*margin:84px 0 0 0 !important;*/
+		margin:17.5% 0 0 0 !important;
+		top:10px !important;
+	}
+}
